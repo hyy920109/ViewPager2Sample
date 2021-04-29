@@ -84,7 +84,6 @@ class NestedScrollableRecyclerView : RecyclerView {
                     parent.requestDisallowInterceptTouchEvent(false)
                 } else {
                     // Gesture is parallel, query child if movement in that direction is possible
-                    //如果recylerView能滑的话
                     if (scrolling.not() && canSelfScroll(orientation, if (isVpHorizontal) dx else dy)) {
                         // Child can scroll, disallow all parents to intercept
                         scrolling = true
